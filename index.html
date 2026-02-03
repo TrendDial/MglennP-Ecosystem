@@ -8,20 +8,15 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>M</text></svg>">
     
     <style>
-        /* Custom 3D Floating Animation from your original CSS */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-        .hero-coin {
-            animation: float 6s ease-in-out infinite;
-        }
-        /* Custom Gradient Heading from your original CSS */
+        /* Custom Gradient Heading from your original design */
         .gradient-text {
             background: linear-gradient(to right, #fff, #9ca3af);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        /* Subtle glow for the gold accent */
+        .gold-glow {
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
         }
     </style>
 </head>
@@ -29,8 +24,13 @@
 
     <div class="max-w-4xl mx-auto px-6 py-12">
         <header class="text-center mb-16">
-            <div class="text-[#FFD700] font-bold text-xl tracking-[4px] mb-6 uppercase">MglennP</div>
-            <img src="coinlogo.jpeg" alt="Mogul Network Coin" class="hero-coin w-40 h-auto mx-auto mb-8 drop-shadow-[0_10px_15px_rgba(0,0,0,0.5)]">
+            <div class="flex flex-col items-center mb-8">
+                <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#FFD700] to-[#B8860B] flex items-center justify-center mb-4 shadow-lg shadow-yellow-500/20">
+                    <span class="text-[#0a0e17] text-3xl font-black italic">M</span>
+                </div>
+                <div class="text-[#FFD700] font-bold text-2xl tracking-[6px] uppercase gold-glow">MglennP</div>
+            </div>
+            
             <h1 class="text-4xl md:text-6xl font-extrabold mb-4 gradient-text">
                 Automating the Modern Web
             </h1>
@@ -47,7 +47,7 @@
                 MglennP is a private development portfolio and software incubator specializing in automated feedback loops and user-centric utilities.
             </p>
 
-            <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="grid md:grid-cols-2 gap-6 mb-8 text-left">
                 <div class="bg-[#111827] p-6 rounded-lg border border-[#374151] hover:border-[#1E40AF] transition-all transform hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-[#e5e7eb] mb-2">TrendDial</h3>
                     <p class="text-[#9ca3af] text-sm mb-4">Algorithmic market sentiment analysis application. Powered by MGLN.</p>
@@ -61,9 +61,9 @@
                 </div>
             </div>
 
-            <div class="p-8 bg-[#111827] border border-[#FFD700] rounded-lg shadow-[0_0_20px_rgba(255,215,0,0.05)]">
+            <div class="p-8 bg-[#111827] border border-[#FFD700] rounded-lg shadow-[0_0_25px_rgba(255,215,0,0.1)] text-left">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-                    <h3 class="text-2xl font-bold text-[#FFD700]">Mogul Network (MGLN)</h3>
+                    <h3 class="text-2xl font-bold text-[#FFD700] gold-glow">Mogul Network (MGLN)</h3>
                     <span class="mt-2 md:mt-0 text-[0.7rem] font-bold px-3 py-1 bg-[#10B981]/10 text-[#10B981] border border-[#10B981]/30 rounded-full uppercase">
                         ● Status: Live & Tradable
                     </span>
@@ -75,14 +75,14 @@
                         <code class="text-[#FFD700] break-all text-sm font-mono">0x6e255050C627c00673f76156Cc5467414342f9e4</code>
                     </div>
 
-                    <div class="border-t border-[#374151] pt-6 text-left">
+                    <div class="border-t border-[#374151] pt-6">
                         <h4 class="text-lg font-semibold text-white">Project Leadership</h4>
                         <p class="text-[#9ca3af] text-sm mt-2 mb-4 leading-relaxed">
                             <strong>Founder:</strong> Michael G. Pearson <br>
                             MglennP is a development portfolio managed by Michael G. Pearson, specializing in automated trading systems and user-centric web utilities.
                         </p>
                         <div class="flex flex-wrap gap-6">
-                            <a href="https://github.com/MglennP" target="_blank" class="text-[#FFD700] hover:text-white transition-colors text-sm font-bold uppercase tracking-wider underline underline-offset-4">
+                            <a href="https://github.com/TrendDial/MglennP-Ecosystem" target="_blank" class="text-[#FFD700] hover:text-white transition-colors text-sm font-bold uppercase tracking-wider underline underline-offset-4">
                                 Verify via GitHub &rarr;
                             </a>
                             <a href="mailto:mogul@mglennp.com" class="text-[#FFD700] hover:text-white transition-colors text-sm font-bold uppercase tracking-wider underline underline-offset-4">
@@ -96,7 +96,7 @@
 
         <footer class="mt-20 pt-8 border-t border-[#374151] text-center">
             <div class="flex justify-center gap-8 mb-6">
-                <a href="https://github.com/MglennP" target="_blank" class="text-[#e5e7eb] hover:text-[#FFD700] transition-colors">GitHub</a>
+                <a href="https://github.com/TrendDial/MglennP-Ecosystem" target="_blank" class="text-[#e5e7eb] hover:text-[#FFD700] transition-colors">GitHub</a>
                 <span class="text-[#374151]">|</span>
                 <a href="mailto:mogul@mglennp.com" class="text-[#e5e7eb] hover:text-[#FFD700] transition-colors">Contact</a>
             </div>
