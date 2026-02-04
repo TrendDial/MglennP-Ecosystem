@@ -8,13 +8,11 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>M</text></svg>">
     
     <style>
-        /* Custom Gradient Heading from your original design */
         .gradient-text {
             background: linear-gradient(to right, #fff, #9ca3af);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* Subtle glow for the gold accent */
         .gold-glow {
             text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
         }
@@ -49,9 +47,14 @@
 
             <div class="grid md:grid-cols-2 gap-6 mb-8 text-left">
                 <div class="bg-[#111827] p-6 rounded-lg border border-[#374151] hover:border-[#1E40AF] transition-all transform hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-[#e5e7eb] mb-2">TrendDial</h3>
-                    <p class="text-[#9ca3af] text-sm mb-4">Algorithmic market sentiment analysis application. Powered by MGLN.</p>
-                    <span class="text-[0.7rem] font-bold text-[#1E40AF] uppercase tracking-widest">● Status: In Development</span>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-[#e5e7eb]">TrendDial</h3>
+                        <span class="text-[0.6rem] bg-[#1E40AF]/20 text-[#1E40AF] px-2 py-0.5 rounded border border-[#1E40AF]/30 font-bold uppercase">Utility: Gated Access</span>
+                    </div>
+                    <p class="text-[#9ca3af] text-sm mb-4 leading-relaxed">
+                        Algorithmic market sentiment analysis powered by MGLN. Features real-time data scraping and custom "MglennP Score" metrics for token holders.
+                    </p>
+                    <span class="text-[0.7rem] font-bold text-[#1E40AF] uppercase tracking-widest">● Status: Beta Integration</span>
                 </div>
 
                 <div class="bg-[#111827] p-6 rounded-lg border border-[#374151] hover:border-[#1E40AF] transition-all transform hover:-translate-y-1">
@@ -72,18 +75,21 @@
                 <div class="space-y-6">
                     <div class="bg-[#0a0e17] p-4 rounded border border-[#374151]">
                         <p class="text-[#9ca3af] text-xs uppercase tracking-widest font-bold mb-2">Contract Address (Base Network)</p>
-                        <code class="text-[#FFD700] break-all text-sm font-mono">0x6e255050C627c00673f76156Cc5467414342f9e4</code>
+                        <code class="text-[#FFD700] break-all text-sm font-mono leading-none">0x6e255050C627c00673f76156Cc5467414342f9e4</code>
                     </div>
 
-                    <div class="border-t border-[#374151] pt-6">
+                    <div class="border-t border-[#374151] pt-6 text-left">
                         <h4 class="text-lg font-semibold text-white">Project Leadership</h4>
-                        <p class="text-[#9ca3af] text-sm mt-2 mb-4 leading-relaxed">
+                        <p class="text-[#9ca3af] text-sm mt-2 mb-6 leading-relaxed">
                             <strong>Founder:</strong> Michael G. Pearson <br>
                             MglennP is a development portfolio managed by Michael G. Pearson, specializing in automated trading systems and user-centric web utilities.
                         </p>
-                        <div class="flex flex-wrap gap-6">
+                        <div class="flex flex-wrap items-center gap-4">
                             <a href="https://github.com/TrendDial/MglennP-Ecosystem" target="_blank" class="text-[#FFD700] hover:text-white transition-colors text-sm font-bold uppercase tracking-wider underline underline-offset-4">
                                 Verify via GitHub &rarr;
+                            </a>
+                            <a href="https://github.com/TrendDial/MglennP-Ecosystem#readme" target="_blank" class="bg-[#FFD700] text-[#0a0e17] px-4 py-2 rounded text-[0.7rem] font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                                View Litepaper &rarr;
                             </a>
                             <a href="mailto:mogul@mglennp.com" class="text-[#FFD700] hover:text-white transition-colors text-sm font-bold uppercase tracking-wider underline underline-offset-4">
                                 Official Contact
