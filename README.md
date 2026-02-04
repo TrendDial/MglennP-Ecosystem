@@ -26,3 +26,4 @@ MGLN is the utility and governance engine of the MglennP ecosystem, deployed on 
 
 ## 📬 Contact & Verification
 For official inquiries, contact the founder directly at [mogul@mglennp.com](mailto:mogul@mglennp.com) or verify code integrity here on GitHub.
+
