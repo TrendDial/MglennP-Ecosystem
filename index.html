@@ -7,14 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .gradient-text { background: linear-gradient(to right, #FFD700, #B8860B); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .gold-glow { text-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
+        .gold-glow { text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); }
         .token-card { border: 1px solid rgba(255, 215, 0, 0.2); transition: all 0.3s ease; }
-        .token-card:hover { border-color: #FFD700; box-shadow: 0 0 30px rgba(255, 215, 0, 0.1); }
+        .token-card:hover { border-color: #FFD700; box-shadow: 0 0 30px rgba(255, 215, 0, 0.15); }
+        .burn-receipt { background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); }
     </style>
 </head>
 <body class="bg-[#0a0e17] text-[#e5e7eb] font-sans antialiased">
 
-    <div class="max-w-2xl mx-auto px-6 py-20 text-center">
+    <div class="max-w-2xl mx-auto px-6 py-16 text-center">
         <div class="flex justify-center mb-8">
             <img src="logo.png" alt="MGLN Logo" class="w-40 h-40 rounded-full border-4 border-[#FFD700] shadow-lg shadow-yellow-500/20">
         </div>
@@ -25,32 +26,46 @@
         <div class="token-card bg-[#111827] p-8 rounded-2xl mb-8">
             <div class="mb-6">
                 <span class="bg-emerald-500/10 text-emerald-500 border border-emerald-500/30 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    ● 100% Liquidity Permanently Burned
+                    ● Liquidity Permanently Burned
                 </span>
             </div>
 
-            <div class="space-y-4 text-left">
+            <div class="space-y-4 text-left mb-8">
                 <div class="bg-[#0a0e17] p-4 rounded-lg border border-[#374151]">
                     <p class="text-[#9ca3af] text-[0.65rem] uppercase tracking-widest font-bold mb-1">Contract Address (Base Network)</p>
-                    <code class="text-[#FFD700] break-all text-sm font-mono">0xC6bacc57cee87930bE22666A78FBb28718009A16</code>
+                    <code class="text-[#FFD700] break-all text-sm font-mono leading-none">0xC6bacc57cee87930bE22666A78FBb28718009A16</code>
                 </div>
             </div>
 
-            <div class="mt-8 flex flex-col gap-4">
-                <a href="https://basescan.org/tx/0xeafad4cdb64205e2b9c49795b955ecf43c35a6531df0fae8407e3578c59fff5a" target="_blank" class="bg-[#FFD700] text-[#0a0e17] py-3 rounded-xl font-black uppercase tracking-wider hover:bg-white transition-all">
-                    Verify Proof of Burn &rarr;
+            <div class="space-y-3">
+                <p class="text-xs text-[#9ca3af] uppercase font-bold tracking-widest mb-2">Verified Burn Receipts</p>
+                
+                <a href="https://basescan.org/tx/0xeafad4cdb64205e2b9c49795b955ecf43c35a6531df0fae8407e3578c59fff5a" target="_blank" 
+                   class="burn-receipt flex items-center justify-between p-4 rounded-xl hover:bg-emerald-500/10 transition-all group">
+                    <span class="text-emerald-400 font-bold text-sm">Main LP Burn Proof</span>
+                    <span class="text-emerald-500 text-xs group-hover:translate-x-1 transition-transform">Verify &rarr;</span>
                 </a>
-                <a href="https://basescan.org/token/0xC6bacc57cee87930bE22666A78FBb28718009A16" target="_blank" class="border border-[#374151] text-[#9ca3af] py-3 rounded-xl font-bold uppercase tracking-wider hover:text-white hover:border-[#FFD700] transition-all">
-                    View on BaseScan
+
+                <a href="https://basescan.org/tx/0xf6aa6f9dc0a42bf0f256381bd8ed74779f6402ba5363785872a69f31cff2fc11" target="_blank" 
+                   class="burn-receipt flex items-center justify-between p-4 rounded-xl hover:bg-emerald-500/10 transition-all group">
+                    <span class="text-emerald-400 font-bold text-sm">Secondary LP Lock Receipt</span>
+                    <span class="text-emerald-500 text-xs group-hover:translate-x-1 transition-transform">Verify &rarr;</span>
+                </a>
+            </div>
+
+            <div class="mt-8">
+                <a href="https://basescan.org/token/0xC6bacc57cee87930bE22666A78FBb28718009A16" target="_blank" 
+                   class="inline-block border border-[#374151] text-[#9ca3af] px-8 py-3 rounded-xl font-bold uppercase tracking-wider hover:text-white hover:border-[#FFD700] transition-all">
+                    View Token on BaseScan
                 </a>
             </div>
         </div>
 
-        <footer class="opacity-50 text-[0.7rem] uppercase tracking-[2px]">
-            &copy; 2026 Michael G. Pearson | MglennP Ecosystem
-        </footer>
+        <div class="pt-8 border-t border-[#374151] opacity-70">
+            <p class="text-xs text-[#9ca3af] mb-1 uppercase tracking-widest font-bold">Project Founder</p>
+            <p class="text-sm font-bold text-white uppercase tracking-widest">Michael G. Pearson</p>
+            <p class="text-[0.6rem] uppercase tracking-[2px] mt-4">&copy; 2026 MglennP Ecosystem</p>
+        </div>
     </div>
 </body>
 </html>
-
-
